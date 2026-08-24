@@ -29,7 +29,9 @@ jobs:
         run: npm ci
 
       - name: Build Angular app
-        run: npm run build -- --base-href /
+        run: |
+          npm run build -- --base-href /
+          cp dist/my-angular-app/browser/index.html dist/my-angular-app/browser/404.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
