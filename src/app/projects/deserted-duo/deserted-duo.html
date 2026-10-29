@@ -1,0 +1,80 @@
+<main class="project-page">
+  <a class="back-link" href="/" appScrollTo="work"
+    ><span aria-hidden="true">←</span> Back to projects</a
+  >
+
+  <header class="project-header">
+    <p class="project-kicker">UNITY · C#</p>
+    <h1>Deserted Duo</h1>
+    <p class="project-subtitle">
+      A small game demo made in 48 hours for the 2024 BFX Game Jam. Built around the theme
+      “connection”.
+    </p>
+    <a
+      class="source-button"
+      href="https://github.com/Joles-Doe/Peculiar-Produce"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><span aria-hidden="true">GH</span> GitHub</a
+    >
+  </header>
+
+  <div class="project-cover">
+    <video
+      controls
+      playsinline
+      preload="metadata"
+      poster="/images/DesertedDuo.jpg"
+      aria-label="Deserted Duo gameplay video"
+    >
+      <source src="/videos/DesertedDuo.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <div class="write-up">
+    <section class="write-section" aria-labelledby="overview-title">
+      <h2 id="overview-title">Overview</h2>
+      <p>
+        In my second year at Bournemouth University, I participated in a team of five for the 2024
+        BFX Game Jam. The theme was “connection,” so we made a local multiplayer game around working
+        together. In 48 hours, our team won first place, along with awards for Best Mechanics and
+        Best 3D Art.
+      </p>
+    </section>
+    <section class="write-section" aria-labelledby="contribution-title">
+      <h2 id="contribution-title">My contribution</h2>
+      <p>
+        I was the programming lead, responsible for implementing the game mechanics and helping the
+        different systems work together. That meant coordinating with the rest of the team as their
+        parts of the game came together.
+      </p>
+    </section>
+    <section class="write-section" aria-labelledby="development-title">
+      <h2 id="development-title">The keybind mechanic</h2>
+      <p>
+        Players begin with movement controls only. To gain abilities such as jumping, they pick up
+        keybinds in the level and swap them for controls they already have. I used enumerators to
+        track which actions each player had assigned, then made the movement script check the
+        keybind block for each input.
+      </p>
+    </section>
+    <section class="write-section" aria-labelledby="checkpoints-title">
+      <h2 id="checkpoints-title">Checkpoints and respawning</h2>
+      <p>
+        Because the game used ragdoll physics, moving a fallen player back to a checkpoint by
+        changing its position caused problems. I built a respawn flow that creates a new player from
+        a prefab at the saved checkpoint and restores the information they need. Checkpoint triggers
+        record the player's location as they reach each point.
+      </p>
+    </section>
+    <section class="write-section" aria-labelledby="reflection-title">
+      <h2 id="reflection-title">What I learned</h2>
+      <p>
+        The game jam gave me a first-hand look at a team game-development pipeline. As programming
+        lead, I saw how each person's work fit together and had to solve problems at the boundaries
+        between systems. It was a valuable experience in building, communicating, and integrating
+        work under a tight deadline.
+      </p>
+    </section>
+  </div>
+</main>

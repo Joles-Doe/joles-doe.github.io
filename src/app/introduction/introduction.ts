@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
+import { ScrollToSection } from '../scroll-to-section.directive';
 
 @Component({
-  imports: [],
+  imports: [ScrollToSection],
   selector: 'app-introduction',
   styleUrl: './introduction.css',
   templateUrl: './introduction.html',

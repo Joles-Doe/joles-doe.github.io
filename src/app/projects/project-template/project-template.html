@@ -1,0 +1,45 @@
+<main class="project-page">
+  <a class="back-link" href="/" appScrollTo="work"
+    ><span aria-hidden="true">←</span> Back to projects</a
+  >
+
+  <header class="project-header">
+    <p class="project-kicker">{{ projectType }}</p>
+    <h1>{{ projectName }}</h1>
+    <p class="project-subtitle">{{ projectSubtitle }}</p>
+    <a class="source-button" href="/" target="_blank" rel="noopener noreferrer"
+      ><span aria-hidden="true">GH</span> GitHub</a
+    >
+  </header>
+
+  <!-- Replace the video source and add a poster image, or remove this block if you have no video. -->
+  <div class="project-cover">
+    <video controls playsinline preload="metadata" aria-label="Project video">
+      <source src="/videos/your-project.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <div class="write-up">
+    <section class="write-section" aria-labelledby="overview-title">
+      <h2 id="overview-title">Overview</h2>
+      <div class="write-area"></div>
+    </section>
+    <section class="write-section" aria-labelledby="contribution-title">
+      <h2 id="contribution-title">My contribution</h2>
+      <div class="write-area"></div>
+    </section>
+    <section class="write-section" aria-labelledby="development-title">
+      <h2 id="development-title">Development</h2>
+      <div class="write-area"></div>
+    </section>
+    <section class="write-section" aria-labelledby="reflection-title">
+      <h2 id="reflection-title">What I learned</h2>
+      <div class="write-area"></div>
+    </section>
+    <!-- Duplicate this section for each screenshot or image you want to show. -->
+    <section class="write-section" aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Gallery</h2>
+      <div class="gallery-placeholder"></div>
+    </section>
+  </div>
+</main>

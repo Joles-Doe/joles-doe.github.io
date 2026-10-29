@@ -1,0 +1,63 @@
+<main class="project-page">
+  <a class="back-link" href="/" appScrollTo="work"
+    ><span aria-hidden="true">←</span> Back to projects</a
+  >
+
+  <header class="project-header">
+    <p class="project-kicker">SDL · C++</p>
+    <h1>Tapper</h1>
+    <p class="project-subtitle">A classic arcade game rebuilt in C++ with SDL.</p>
+    <a
+      class="source-button"
+      href="https://github.com/Joles-Doe/Tapper"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><span aria-hidden="true">GH</span> GitHub</a
+    >
+  </header>
+
+  <div class="project-cover">
+    <video
+      controls
+      playsinline
+      preload="metadata"
+      poster="/images/Tapper.jpg"
+      aria-label="Tapper gameplay video"
+    >
+      <source src="/videos/Tapper.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <div class="write-up">
+    <section class="write-section" aria-labelledby="overview-title">
+      <h2 id="overview-title">Overview</h2>
+      <p>
+        Tapper started as a way to put my C++ skills into practice. I built a small game engine on
+        top of SDL, then created an arcade game with it as a hands-on challenge.
+      </p>
+    </section>
+    <section class="write-section" aria-labelledby="engine-title">
+      <h2 id="engine-title">Engine and object lifecycle</h2>
+      <p>
+        Taking inspiration from Unity, I designed game objects with update and draw functions that
+        the engine calls each frame. I used shared pointers to manage object lifetime and remove
+        objects from the engine hierarchy without hard-coded names.
+      </p>
+    </section>
+    <section class="write-section" aria-labelledby="game-objects-title">
+      <h2 id="game-objects-title">Game objects</h2>
+      <p>
+        A shared base class with virtual update and draw functions let the engine work with
+        different object types through the same interface.
+      </p>
+    </section>
+    <section class="write-section" aria-labelledby="reflection-title">
+      <h2 id="reflection-title">What I learned</h2>
+      <p>
+        The project gave me practical experience with object-oriented design and memory management,
+        and showed me how much easier development becomes when the engine and game are broken into
+        clear parts.
+      </p>
+    </section>
+  </div>
+</main>
